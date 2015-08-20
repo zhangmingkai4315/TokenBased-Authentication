@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/vendor/angular/angular.min.js">
+    </script>
+    <script type="text/javascript" src="/javascripts/app.js">
+    </script>
+  </head>
+  <body>
+      <div ng-controller="UserCtrl">
+        <span></span>
+        <form ng-submit="submit()">
+          <input ng-model="user.username" type="text" name="user" placeholder="Username" />
+          <input ng-model="user.password" type="password" name="pass" placeholder="Password" />
+          <input type="submit" value="Login" />
+        </form>
+        <span ng-bind="message"></span>
+        <button ng-click="apiCall()">CallRestricApi</button>
+      </div>
+  </body>
+</html>
