@@ -8,7 +8,9 @@
 
 
 使用
-
+```
    npm install
    bower install
-    npm start 启动服务器后 在http://localhost:3000页面尝试登陆
+   npm start 
+```   
+启动服务器后 在http://localhost:3000页面尝试登陆
